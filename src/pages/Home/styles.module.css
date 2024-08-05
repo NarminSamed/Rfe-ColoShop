@@ -1,0 +1,81 @@
+.homeWrapper {
+    background-image: url('../../assets/img/slider_1.jpg');
+    background-size: cover;
+    background-position: center; 
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 0 6%;
+  }
+
+  .mainText > h1{
+    padding: 2% 0;
+    width: 70%;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .shopBtn {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    background-color: var(--red-dark);
+  }
+
+
+  .container {
+    padding: 20px 16%;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px; 
+  }
+  
+  .col {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 8px; 
+    box-sizing: border-box;
+  }
+  
+  .bannerItem {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px; 
+    position: relative;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  .bannerCategory {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .bannerCategory a {
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 40px;
+   font-weight: 600;
+  }
+  
+  .bannerCategory a:hover {
+    color: var( --grey-light);
+    transition: var(--tran-04);
+  }
+  

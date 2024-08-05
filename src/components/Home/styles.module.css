@@ -1,0 +1,41 @@
+.arrivalWrapper {
+  padding: 2% 6%;
+  text-align: center;
+}
+
+.arrivalTitle > h2 {
+  font-size: 26px;
+  position: relative;
+  display: inline-block;
+}
+.arrivalTitle > h2::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: var(--red-dark);
+  margin-top: 4px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transform: translateX(14%);
+}
+
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: grey;
+}
+
+.heartIcon.active {
+  color: red;
+}
+.cardActions{
+    margin: 2% 0;
+}
+.cardActions > button{
+    background-color: var(--red-dark);
+    width: 90%;
+}

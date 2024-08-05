@@ -1,0 +1,60 @@
+.headerWrapper {
+  width: 100%;
+}
+
+.headerBlack {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5%;
+}
+
+.headerBlack > p {
+  color: white;
+  font-size: 14px;
+}
+
+.dropdownLink {
+  color: white;
+}
+
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 2%;
+  background-color: white;
+  box-shadow: rgba(105, 126, 147, 0.2) 0px 8px 24px;
+}
+
+.navLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menuLink {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menuLink > li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navRight {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}

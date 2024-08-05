@@ -1,0 +1,55 @@
+.blogContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6%;
+  }
+  
+  .card {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .cardContent {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .cardContent {
+    transform: translateY(0);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
