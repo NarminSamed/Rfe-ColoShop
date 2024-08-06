@@ -1,5 +1,7 @@
 .headerWrapper {
   width: 100%;
+  position: relative;
+  z-index: 1000;
 }
 
 .headerBlack {
@@ -27,6 +29,9 @@
   padding: 2%;
   background-color: white;
   box-shadow: rgba(105, 126, 147, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 0; 
+  z-index: 1000;
 }
 
 .navLinks {
@@ -48,6 +53,9 @@
   align-items: center;
   cursor: pointer;
 }
+.menuLink > li > a {
+  color: var(--text-color);
+}
 
 .navRight {
   display: flex;
@@ -57,4 +65,47 @@
 .icon {
   font-size: 20px;
   cursor: pointer;
+}
+
+.hamburgerButton {
+  display: none;
+}
+
+.drawerMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.drawerMenu > li {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerBlack {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerBlack > p {
+    margin-bottom: 10px;
+  }
+
+  .navbarWrapper {
+    padding: 5px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
 }

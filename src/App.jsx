@@ -5,8 +5,8 @@ import Home from "./pages/Home/index.jsx";
 import ProductDetail from "./pages/DetailPage/index.jsx";
 import About from "./pages/About/index.jsx";
 import Contact from "./pages/Contact/index.jsx"
-import Services from "./pages/Services/index.jsx";
 import Products from "./pages/Product/index.jsx";
+import AddProducts from "./pages/AddProduct/index.jsx";
 import {CardProvider} from "./context/Card.jsx"
 
 const router = createBrowserRouter([
@@ -37,9 +37,10 @@ const router = createBrowserRouter([
         element: <ProductDetail />,
       },
       {
-        path: "services",
-        element: <Services/>,
+        path: "addproducts",
+        element: <AddProducts/>,
       },
+     
       {
         path: "contact",
         element: <Contact/>,

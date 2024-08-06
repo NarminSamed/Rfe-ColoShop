@@ -28,6 +28,29 @@ export const BestSeller = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -47,9 +70,9 @@ export const BestSeller = () => {
                   <div style={{ textAlign: "center" }}>
                     <span
                       style={{
-                        fontSize: "1.2rem", 
-                        color: "red", 
-                        fontWeight: "bold", 
+                        fontSize: "1.2rem",
+                        color: "red",
+                        fontWeight: "bold",
                       }}
                     >
                       ${product.price}
